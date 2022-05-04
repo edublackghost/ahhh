@@ -5,6 +5,9 @@ let jumping = false;
 const enemyEl1 = document.querySelector('.car-1-container')
 let walking1 = false
 
+const enemyEl2 = document.querySelector('.car-2-container')
+let walking2 = false
+
 
 // Gestione interazione utente
 document.onkeydown = (e) => {
@@ -53,9 +56,22 @@ setInterval(() => {
             enemyEl1.classList.remove('moving')
             walking1 = false
         },4000)
+
+    }
+
+    const random2 = Math.random()
+    if ( random2 < 0.5 && walking2 == false){
+        walking2 = true
+        enemyEl2.classList.add('moving')
+        setTimeout(() => {
+            enemyEl2.classList.remove('moving')
+            walking2 = false
+        },4000)
     }
 
 },500)
+
+
 
 
 
