@@ -1,0 +1,100 @@
+body{
+    background-image: url(sea.JPG);
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .penguin-container{
+    width: 120px;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    /* forwards the animation remain in the state of the end */
+   
+  }
+  .up{
+    animation: pengAnimUp 2000ms  infinite;
+  }
+  .down{
+    animation: pengAnimDown 2000ms  infinite;
+  }
+  
+  .penguin-container img{
+    width: 100%;
+  }
+  
+  
+  .car-1-container{
+    width: 140px;
+    position: absolute;
+    left: 100%;
+    top: 40%;
+    transform: scaleX(-1) ;
+  }
+  
+  .car-1-container img{
+    width: 100%;
+  }
+  
+  .car-2-container{
+    width: 140px;
+    position: absolute;
+    left: 100%;
+    top: 200%;
+    transform: scaleX(-1) ;
+  }
+  .car-2-container img{
+    width: 100%;
+   padding-top: 130px;
+  }
+  
+  
+  
+  .moving{
+    animation: enemyMovingLeft 4000ms  infinite;
+  }
+  
+  
+  @keyframes enemyMovingLeft{
+    0%{
+      left: 100%;
+      top: 40%;
+    }
+    100%{
+      left: -30%;
+      top: 40%;
+    }
+  }
+  
+  
+  
+  @keyframes pengAnimUp{
+    0%,
+    100%{
+      left: 10%;
+      top: 40%;
+    }
+    50%{
+      left: 10%;
+      top: 20%;
+    }
+  }
+  
+  
+  @keyframes pengAnimDown{
+    0%,
+    100%{
+      left: 10%;
+      top: 40%;
+    }
+    50%{
+      left: 10%;
+      top: 70%;
+    }
+  }
+  
+  
+  
+  
