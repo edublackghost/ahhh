@@ -27,7 +27,7 @@ document.onkeydown = (e) => {
         setTimeout(() => {
             jumping = false
             charEl.classList.remove('up')
-        },2000)
+        },1700)
     }
     if ( 
         (e.code === "KeyS" || e.code === "ArrowDown")
@@ -38,7 +38,7 @@ document.onkeydown = (e) => {
         setTimeout(() => {
             jumping = false
             charEl.classList.remove('down')
-        },2000)
+        },1700)
     }
 }
 
@@ -55,7 +55,7 @@ setInterval(() => {
         setTimeout(() => {
             enemyEl1.classList.remove('moving')
             walking1 = false
-        },4000)
+        },3000)
 
     }
 
@@ -66,7 +66,7 @@ setInterval(() => {
         setTimeout(() => {
             enemyEl2.classList.remove('moving')
             walking2 = false
-        },4000)
+        },2500)
     }
 
 },500)
