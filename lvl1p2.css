@@ -41,10 +41,7 @@ body{
     top: 200%;
     transform: scaleX(-1) ;
   }
-  .car-2-container img{
-    width: 100%;
-   padding-top: 130px;
-  }
+
   .moving{
     animation: enemyMovingRight 4000ms  infinite;
   }
@@ -62,7 +59,7 @@ body{
   
   
   
-  @keyframes pengAnimUp{
+  @keyframes pigeAnimUp{
     0%,
     100%{
       left: 10%;
@@ -75,7 +72,7 @@ body{
   }
   
   
-  @keyframes pengAnimDown{
+  @keyframes pigeAnimDown{
     0%,
     100%{
       left: 10%;
