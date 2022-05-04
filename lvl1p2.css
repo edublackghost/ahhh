@@ -12,7 +12,79 @@ body{
     /* forwards the animation remain in the state of the end */
    
   }
+
+  .up{
+    animation: pigeAnimUp 2000ms  infinite;
+  }
+  .down{
+    animation: pigeAnimDown 2000ms  infinite;
+  }
+
   .pigeon-container img{
     width: 100%;
   }
+  .gondoliere-1-container{
+    width: 170px;
+    position: absolute;
+    left: 100%;
+    top: 40%;
+    transform: scaleX(-1) ;
+  }
+  
+  .gondoliere-1-container img{
+    width: 100%;
+  }
+  .gondoliere-2-container{
+    width: 170px;
+    position: absolute;
+    left: 100%;
+    top: 200%;
+    transform: scaleX(-1) ;
+  }
+  .car-2-container img{
+    width: 100%;
+   padding-top: 130px;
+  }
+  .moving{
+    animation: enemyMovingRight 4000ms  infinite;
+  }
+
+  @keyframes enemyMovingRight{
+    0%{
+      right: 100%;
+      top: 40%;
+    }
+    100%{
+      right: -30%;
+      top: 40%;
+    }
+  }
+  
+  
+  
+  @keyframes pengAnimUp{
+    0%,
+    100%{
+      left: 10%;
+      top: 40%;
+    }
+    50%{
+      left: 10%;
+      top: 20%;
+    }
+  }
+  
+  
+  @keyframes pengAnimDown{
+    0%,
+    100%{
+      left: 10%;
+      top: 40%;
+    }
+    50%{
+      left: 10%;
+      top: 70%;
+    }
+  }
+  
   
