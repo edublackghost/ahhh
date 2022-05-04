@@ -4,3 +4,15 @@ body{
     min-height: 100vh;
   }
   
+  .pigeon-container{
+    width: 120px;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    /* forwards the animation remain in the state of the end */
+   
+  }
+  .pigeon-container img{
+    width: 100%;
+  }
+  
