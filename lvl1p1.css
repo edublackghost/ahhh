@@ -4,7 +4,8 @@ body{
   min-height: 100vh;
   max-height: 100vh;
   overflow: hidden;
-}
+  animation: mob 4000ms linear infinite;
+} 
 
 .penguin-container{
   width: 120px;
@@ -95,6 +96,13 @@ body{
   50%{
     left: 10%;
     top: 70%;
+  }
+}
+
+
+@keyframes mob{
+  100%{
+    background-position: -100vw 0 ;
   }
 }
 

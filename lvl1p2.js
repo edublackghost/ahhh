@@ -4,6 +4,9 @@ let jumping = false;
 const enemyEl1 = document.querySelector('.gondoliere-1-container')
 let walking1 = false
 
+const enemyEl2 = document.querySelector('.gondoliere-2-container')
+let walking2 = false
+
 document.onkeydown = (e) => {
     console.log(e.code)
 

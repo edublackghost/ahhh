@@ -24,10 +24,10 @@ body{
     width: 100%;
   }
   .gondoliere-1-container{
-    width: 170px;
+    width: 300px;
     position: absolute;
-    left: 100%;
-    top: 40%;
+   left: 100%;
+    top: 30%;
     transform: scaleX(-1) ;
   }
   
@@ -35,25 +35,27 @@ body{
     width: 100%;
   }
   .gondoliere-2-container{
-    width: 170px;
+    width: 300px;
     position: absolute;
     left: 100%;
-    top: 200%;
+    top: 60%;
     transform: scaleX(-1) ;
+  }
+  .gondoliere-2-container img{
+    width: 100%;
   }
 
   .moving{
-    animation: enemyMovingRight 4000ms  infinite;
+    animation: enemyMovingLeft 4000ms  infinite;
   }
 
-  @keyframes enemyMovingRight{
+  @keyframes enemyMovingLeft{
     0%{
-      right: 100%;
-      top: 40%;
+      left: 100%;
+     
     }
     100%{
-      right: -30%;
-      top: 40%;
+      left: -30%;
     }
   }
   
