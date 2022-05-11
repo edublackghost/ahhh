@@ -72,6 +72,10 @@ setInterval(() => {
 },500)
 
 
+setTimeout(() => {
+    alert("you won")
+    location.href="lvl2p1.html"
+},1000*69)
 
 
 
