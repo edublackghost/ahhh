@@ -26,28 +26,29 @@ body{
   }
   
   
-  .car-1-container{
+  .plane-container{
     width: 140px;
     position: absolute;
     left: 100%;
-    top: 40%;
+    top: 50%;
     transform: scaleX(-1) ;
   }
   
-  .car-1-container img{
+  .plane-container img{
     width: 100%;
   }
   
-  .car-2-container{
+  .rocket-container{
     width: 140px;
     position: absolute;
     left: 100%;
-    top: 200%;
+    top: 25%;
     transform: scaleX(-1) ;
   }
-  .car-2-container img{
-    width: 100%;
-   padding-top: 130px;
+  .rocket-container img{
+    width: 175%;
+   padding-top: 200px;
+   
   }
   
   
