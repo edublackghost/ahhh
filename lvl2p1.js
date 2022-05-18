@@ -2,7 +2,7 @@
 const charEl = document.querySelector('.penguin-container')
 let jumping = false;
 
-const charEl1 = document.querySelector ('.plane-container')
+const enemyEl1 = document.querySelector ('.plane-container')
 let walking1 = false
 
 const enemyEl2 = document.querySelector('.rocket-container')
@@ -24,10 +24,10 @@ document.onkeydown = (e) => {
         && jumping == false
         ){
         jumping = true
-        charEl1.classList.add('up')
+        charEl.classList.add('up')
         setTimeout(() => {
             jumping = false
-            charEl1.classList.remove('up')
+            charEl.classList.remove('up')
         },2000)
     }
     if ( 
@@ -46,7 +46,7 @@ document.onkeydown = (e) => {
 
 setInterval(() => {
     const random1 = Math.random()
-    if ( random1 < 0.5 && walking1 == false){
+    if ( random1 < 1.5 && walking1 == false){
         walking1 = true
         enemyEl2.classList.add('moving')
         setTimeout(() => {
@@ -58,3 +58,16 @@ setInterval(() => {
 
 },500)
 
+setInterval(() => {
+    const random1 = Math.random()
+    if ( random1 < 1.5 && walking1 == false){
+        walking1 = true
+        enemyEl1.classList.add('moving')
+        setTimeout(() => {
+            enemyEl1.classList.remove('moving')
+            walking1 = false
+        },4000)
+
+    }
+
+},500)
