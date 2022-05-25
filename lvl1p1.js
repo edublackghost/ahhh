@@ -27,7 +27,7 @@ document.onkeydown = (e) => {
         setTimeout(() => {
             jumping = false
             charEl.classList.remove('up')
-        },1700)
+        },2000)
     }
     if ( 
         (e.code === "KeyS" || e.code === "ArrowDown")
@@ -38,7 +38,7 @@ document.onkeydown = (e) => {
         setTimeout(() => {
             jumping = false
             charEl.classList.remove('down')
-        },1700)
+        },2000)
     }
 }
 
@@ -97,5 +97,28 @@ function isCollide(a, b) {
         ((aRect.left + aRect.width) < bRect.left) ||
         (aRect.left > (bRect.left + bRect.width))
     );
+}
+
+
+// interval for collision
+setInterval(() => {
+    if (isCollide(charEl, enemyEl2)){
+       alert("game over")
+   }
+// ... is collide enemyEl2
+
+},50)
+
+
+function isCollide(a, b) {
+   var aRect = a.getBoundingClientRect();
+   var bRect = b.getBoundingClientRect();
+
+   return !(
+       ((aRect.top + aRect.height) < (bRect.top)) ||
+       (aRect.top > (bRect.top + bRect.height)) ||
+       ((aRect.left + aRect.width) < bRect.left) ||
+       (aRect.left > (bRect.left + bRect.width))
+   );
 }
 
