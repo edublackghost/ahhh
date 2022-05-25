@@ -57,6 +57,13 @@ setInterval(() => {
 },500)
 
 
+
+setTimeout(() => {
+    alert("you won")
+    location.href="greenland.html"
+},1000*30)
+
+
 // interval for collision
 setInterval(() => {
     if (isCollide(charEl, enemyEl1)){
