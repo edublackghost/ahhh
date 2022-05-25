@@ -23,7 +23,8 @@ body{
   }
 
   .pigeon-container img{
-    width: 100%;
+    width: 90%;
+    background-color:red ;
   }
   .gondoliere-1-container{
     width: 300px;
@@ -34,7 +35,8 @@ body{
   }
   
   .gondoliere-1-container img{
-    width: 100%;
+    width: 50%;
+    background-color: blue;
   }
   .gondoliere-2-container{
     width: 300px;
@@ -44,7 +46,7 @@ body{
     transform: scaleX(-1) ;
   }
   .gondoliere-2-container img{
-    width: 100%;
+    width: 50%;
   }
 
   .moving{
