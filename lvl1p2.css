@@ -3,7 +3,7 @@ body{
     background-size: cover;
     min-height: 100vh;
     overflow: hidden;
-    
+    animation: mob 4000ms linear infinite;
   }
   
   .pigeon-container{
@@ -89,5 +89,11 @@ body{
       top: 70%;
     }
   }
+  @keyframes mob{
+    100%{
+      background-position: -100vw 0 ;
+    }
+  }
+  
   
   
