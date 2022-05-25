@@ -74,8 +74,8 @@ setInterval(() => {
 
 setTimeout(() => {
     alert("you won")
-    location.href="lvl2p1.html"
-},1000*69)
+    location.href="greenland.html"
+},1000*30)
 
 // interval for collision
  setInterval(() => {
