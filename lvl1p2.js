@@ -66,6 +66,14 @@ setInterval(() => {
 
 },50)
 
+setInterval(() => {
+    if (isCollide(charEl, enemyEl2)){
+       alert("game over")
+    //    console.log("game over")
+   }
+// ... is collide enemyEl2
+
+},50)
 
 function isCollide(a, b) {
    var aRect = a.getBoundingClientRect();
