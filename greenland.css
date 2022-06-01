@@ -14,5 +14,54 @@ body {
   width: 100%;
   transform: scaleX(-1) ;
 }
+ 
+.pigeon-container{
+    width: 110px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+   
+    /* forwards the animation remain in the state of the end */
+   
+  }
+
+  .pigeon-container img{
+    width: 120%;
+    transform: scaleX(-1) ;
+  }
+
+  .pigeon-text{
+    width: 400px;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+  }
+  .pigeon-text img{
+      width: 100%;
+  }   
 
 
+  .peng-text{
+    width: 400px;
+    left: 10%;
+        position: absolute;
+
+    top: 60%;
+  }
+  .peng-text img{
+      width: 100%;
+      
+  }   
+
+  .achievement {
+      width: 100%;
+  }
+
+  
+
+
+
+  .achievement img{
+    width: 100%;
+    
+}  
