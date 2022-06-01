@@ -39,7 +39,8 @@ body{
   width: 100%;
 }
 .penguin-container img{
-  width: 100%;
+  width: 80%;
+  transform: scaleX(-1) ;
 }
 
 
