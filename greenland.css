@@ -1,0 +1,18 @@
+body {
+    background-image: url(greenland.webp);
+    background-size:cover;
+    background-position: bottom;
+}
+
+.penguin-container{
+    width: 120px;
+    position: absolute;
+    left: 10%;
+    top: 70%;
+}
+.penguin-container img{
+  width: 100%;
+  transform: scaleX(-1) ;
+}
+
+
